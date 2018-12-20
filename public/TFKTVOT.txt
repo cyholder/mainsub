@@ -1,0 +1,19 @@
+MANDT	SPRAS	APPLK	HVORG	TVORG	TXT30	ZZINVTXT
+110	EN	T	0300	1058	Connectivity NTTI - OTC	Connectivity NTTI - OTC
+110	EN	T	0300	1060	Device Services - Recurr	Device Services - Recurr
+110	EN	T	0300	1062	Connectivity NTTI - Recurr	Connectivity NTTI - Recurr
+110	EN	T	0300	1064	Device Services - OTC	Device Services - OTC
+110	EN	T	0300	1066	Farsiendo IT Services - Adjusment	Farsiendo IT Services - Adjusment
+110	EN	T	0300	1068	Device Services - OTC	Device Services - OTC
+110	EN	T	0300	1070	Device Services - Recurr	Device Services - Recurr
+110	EN	T	0300	1072	Business Process Outsourcing - OTC	Business Process Outsourcing - OTC
+110	EN	T	0300	1074	Business Process Outsourcing - Recurr	Business Process Outsourcing - Recurr
+110	EN	T	0300	1059	Connectivity NTTI - OTC	Connectivity NTTI - OTC
+110	EN	T	0300	1061	Device Services - Recurr	Device Services - Recurr
+110	EN	T	0300	1063	Connectivity NTTI - Recurr	Connectivity NTTI - Recurr
+110	EN	T	0300	1065	Device Services - OTC	Device Services - OTC
+110	EN	T	0300	1067	Farsiendo IT Services - Adjusment	Farsiendo IT Services - Adjusment
+110	EN	T	0300	1069	Device Services - OTC	Device Services - OTC
+110	EN	T	0300	1071	Device Services - Recurr	Device Services - Recurr
+110	EN	T	0300	1073	Business Process Outsourcing - OTC	Business Process Outsourcing - OTC
+110	EN	T	0300	1075	Business Process Outsourcing - Recurr	Business Process Outsourcing - Recurr
