@@ -15,7 +15,8 @@ class MainController extends Controller
         $content = '';
 
         reset($array);
-        while(list($key, $val) = each($array)){
+        foreach ($array as $key => $val ) {
+//        while(list($key, $val) = each($array)){
 
             // replace tabs in keys and values to [space]
             $key = str_replace("\t", " ", $key);
