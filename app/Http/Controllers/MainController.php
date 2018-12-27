@@ -40,6 +40,14 @@ class MainController extends Controller
         return true;
     }
 
+    function check_zero($val){
+        if ($val < 1000) {
+            return '0'.$val;
+        } else {
+            return $val;
+        }
+    }
+
     public function post(Request $request){
 
         $request->validate([
@@ -93,7 +101,7 @@ class MainController extends Controller
             $t305_e[$b]['BUKRS'] = '1000';
             $t305_e[$b]['SPARTE'] = '';
             $t305_e[$b]['HVORG'] = $request->hvorg;
-            $t305_e[$b]['TVORG'] = $num_genap;
+            $t305_e[$b]['TVORG'] = $this->check_zero($num_genap);
             $t305_e[$b]['SHKZG'] = 'S';
             foreach ($empty_field_te305 as $e) {
                 $t305_e[$b][$e] = '';
@@ -108,7 +116,7 @@ class MainController extends Controller
             $t305t_e[$b]['CoCd'] = '1000';
             $t305t_e[$b]['Dv'] = '';
             $t305t_e[$b]['MTrans'] = $request->hvorg;
-            $t305t_e[$b]['STrans'] = $num_genap;
+            $t305t_e[$b]['STrans'] = $this->check_zero($num_genap);
             $t305t_e[$b]['Trans.Text'] = $c;
             $t305t_e[$b]['Text'] = $c;
 
@@ -116,7 +124,7 @@ class MainController extends Controller
             $tfktvo_e[$b]['MANDT'] = $request->mandt;
             $tfktvo_e[$b]['APPLK'] = 'T';
             $tfktvo_e[$b]['HVORG'] = $request->hvorg;
-            $tfktvo_e[$b]['TVORG'] = $num_genap;
+            $tfktvo_e[$b]['TVORG'] = $this->check_zero($num_genap);
             $tfktvo_e[$b]['HVORG_REV'] = '';
             $tfktvo_e[$b]['TVORG_REV'] = '';
             $tfktvo_e[$b]['FAETP'] = '';
@@ -132,7 +140,7 @@ class MainController extends Controller
             $tfktvot_e[$b]['SPRAS'] = 'EN';
             $tfktvot_e[$b]['APPLK'] = 'T';
             $tfktvot_e[$b]['HVORG'] = $request->hvorg;
-            $tfktvot_e[$b]['TVORG'] = $num_genap;
+            $tfktvot_e[$b]['TVORG'] = $this->check_zero($num_genap);
             $tfktvot_e[$b]['TXT30'] = $c;
             $tfktvot_e[$b]['ZZINVTXT'] = $c;
 
@@ -159,7 +167,7 @@ class MainController extends Controller
             $t305_o[$b]['BUKRS'] = '1000';
             $t305_o[$b]['SPARTE'] = '';
             $t305_o[$b]['HVORG'] = $request->hvorg;
-            $t305_o[$b]['TVORG'] = $num_ganjil;
+            $t305_o[$b]['TVORG'] = $this->check_zero($num_ganjil);
             $t305_o[$b]['SHKZG'] = 'H';
             foreach ($empty_field_te305 as $e) {
                 $t305_o[$b][$e] = '';
@@ -174,7 +182,7 @@ class MainController extends Controller
             $t305t_o[$b]['CoCd'] = '1000';
             $t305t_o[$b]['Dv'] = '';
             $t305t_o[$b]['MTrans'] = $request->hvorg;
-            $t305t_o[$b]['STrans'] = $num_ganjil;
+            $t305t_o[$b]['STrans'] = $this->check_zero($num_ganjil);
             $t305t_o[$b]['Trans.Text'] = $c;
             $t305t_o[$b]['Text'] = $c;
 
@@ -182,7 +190,7 @@ class MainController extends Controller
             $tfktvo_o[$b]['MANDT'] = $request->mandt;
             $tfktvo_o[$b]['APPLK'] = 'T';
             $tfktvo_o[$b]['HVORG'] = $request->hvorg;
-            $tfktvo_o[$b]['TVORG'] = $num_ganjil;
+            $tfktvo_o[$b]['TVORG'] = $this->check_zero($num_ganjil);
             $tfktvo_o[$b]['HVORG_REV'] = '';
             $tfktvo_o[$b]['TVORG_REV'] = '';
             $tfktvo_o[$b]['FAETP'] = '';
@@ -198,7 +206,7 @@ class MainController extends Controller
             $tfktvot_o[$b]['SPRAS'] = 'EN';
             $tfktvot_o[$b]['APPLK'] = 'T';
             $tfktvot_o[$b]['HVORG'] = $request->hvorg;
-            $tfktvot_o[$b]['TVORG'] = $num_ganjil;
+            $tfktvot_o[$b]['TVORG'] = $this->check_zero($num_ganjil);
             $tfktvot_o[$b]['TXT30'] = $c;
             $tfktvot_o[$b]['ZZINVTXT'] = $c;
 
